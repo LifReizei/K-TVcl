@@ -1,0 +1,48 @@
+{
+  "id": "teles-cl",
+  "name": "Teles Chile",
+  "version": "1.0.0",
+  "apiVersion": 3,
+  "author": "LifReizei",
+  "description": "Canales de televisión en vivo de Chile y el mundo desde el directorio json-teles de Alplox.",
+  "langs": ["es"],
+  "nsfw": false,
+  "entry": "plugin.js",
+  "color": "#FF6B6B",
+  "section": {
+    "label": "Teles"
+  },
+  "categories": ["live"],
+  "hosts": [
+    "cdn.jsdelivr.net",
+    "raw.githubusercontent.com",
+    "*.jsdelivr.net",
+    "*.githubusercontent.com"
+  ],
+  "streamHosts": "any",
+  "liveStreamHosts": "any",
+  "capabilities": [
+    "home",
+    "resolve",
+    "channels"
+  ],
+  "settings": [
+    {
+      "key": "pais",
+      "label": "País preferido",
+      "type": "select",
+      "default": "all",
+      "options": [
+        { "value": "all", "label": "Todos" },
+        { "value": "cl", "label": "Chile" },
+        { "value": "ar", "label": "Argentina" },
+        { "value": "mx", "label": "México" },
+        { "value": "pe", "label": "Perú" },
+        { "value": "co", "label": "Colombia" },
+        { "value": "es", "label": "España" },
+        { "value": "us", "label": "Estados Unidos" }
+      ]
+    }
+  ],
+  "icon": "icon.png"
+}
